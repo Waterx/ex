@@ -1,6 +1,6 @@
 %% Instructions
 %  Using pca to reduce dimension and use logistic regression to divide two classes.  
-%  At last,using examples to test the answer
+%  At last , using examples to test the model
 %% Initialization
 clear ; close all; clc
 
@@ -27,6 +27,7 @@ pause;
 scatter3(X_norm(:,1),X_norm(:,2),X_norm(:,3),'x');
 
 %  Run PCA
+%  In this step , use svd function
 [U, S, V] = pca(X_norm);
 
 fprintf('Program paused. Press enter to continue.\n');
