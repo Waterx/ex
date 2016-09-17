@@ -54,7 +54,6 @@ pause;
 X = Z(:, [1, 2]); y = data1(:, 4);
 plotData(X,y);
 
-
 X = mapFeature(X(:,1), X(:,2));
 
 % Initialize fitting parameters
@@ -71,9 +70,6 @@ fprintf('Cost at initial theta (zeros): %f\n', cost);
 
 % Initialize fitting parameters
 initial_theta = zeros(size(X, 2), 1);
-
-% Set regularization parameter lambda to 1 (you should vary this)
-lambda = 1;
 
 % Set Options
 options = optimset('GradObj', 'on', 'MaxIter', 400);
